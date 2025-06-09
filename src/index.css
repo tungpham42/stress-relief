@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Pacifico&display=swap");
+
+body {
+  margin: 0 !important;
+  font-family: "Fira Sans", sans-serif !important;
+  background: linear-gradient(135deg, #e0f7fa 0%, #c8e6c9 100%) !important;
+  min-height: 100vh !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: flex-start !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace !important;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.9) !important;
+  border-radius: 20px !important;
+  padding: 2rem !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1) !important;
+  max-width: 600px !important;
+  margin-top: 2rem !important;
+}
+
+h1 {
+  font-family: "Pacifico", cursive !important;
+  color: #2e7d32 !important;
+  font-size: 2.5rem !important;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+}
+
+h4,
+h5 {
+  color: #388e3c !important;
+  font-weight: 600 !important;
+}
+
+.btn-primary {
+  background-color: #0288d1 !important;
+  border: none !important;
+  border-radius: 25px !important;
+  padding: 0.75rem 1.5rem !important;
+  transition: transform 0.2s ease, background-color 0.3s ease !important;
+}
+
+.btn-primary:hover {
+  background-color: #01579b !important;
+  transform: scale(1.05) !important;
+}
+
+.btn-success {
+  background-color: #4caf50 !important;
+  border: none !important;
+  border-radius: 25px !important;
+  padding: 0.75rem 1.5rem !important;
+  transition: transform 0.2s ease, background-color 0.3s ease !important;
+}
+
+.btn-success:hover {
+  background-color: #388e3c !important;
+  transform: scale(1.05) !important;
+}
+
+.btn-danger {
+  background-color: #ef5350 !important;
+  border: none !important;
+  border-radius: 25px !important;
+  padding: 0.75rem 1.5rem !important;
+  transition: transform 0.2s ease, background-color 0.3s ease !important;
+}
+
+.btn-danger:hover {
+  background-color: #d32f2f !important;
+  transform: scale(1.05) !important;
+}
+
+.text-center {
+  animation: fadeIn 1s ease-in-out !important;
+}
+
+blockquote {
+  font-family: "Lora", serif !important;
+  font-style: italic !important;
+  color: #424242 !important;
+  background: rgba(200, 230, 201, 0.3) !important;
+  padding: 1.5rem !important;
+  border-radius: 15px !important;
+  margin: 1rem 0 !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05) !important;
+}
+
+iframe {
+  border-radius: 15px !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0 !important;
+    transform: translateY(10px) !important;
+  }
+  to {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+  }
+}
