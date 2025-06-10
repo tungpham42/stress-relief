@@ -8,6 +8,12 @@ export default function MusicPlayer() {
   const [selectedTrack, setSelectedTrack] = useState(defaultTrack);
   const [error, setError] = useState(null);
 
+  // Helper function to extract YouTube video ID from embed URL
+  const extractVideoId = (url) => {
+    const match = url.match(/embed\/([a-zA-Z0-9_-]+)/);
+    return match ? match[1] : "";
+  };
+
   // Handle track selection
   const handleTrackChange = (event) => {
     setSelectedTrack(event.target.value);
@@ -46,7 +52,9 @@ export default function MusicPlayer() {
       <iframe
         width="100%"
         height="200"
-        src={selectedTrack}
+        src={`${selectedTrack}?loop=1&playlist=${extractVideoId(
+          selectedTrack
+        )}`}
         title="Relaxing Music"
         frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;"
