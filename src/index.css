@@ -18,10 +18,13 @@ code {
 }
 
 .container {
-  background: rgba(255, 255, 255, 0.9) !important;
+  background: rgba(255, 255, 255, 0.15) !important;
   border-radius: 20px !important;
   padding: 2rem !important;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1) !important;
+  backdrop-filter: blur(10px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(10px) saturate(180%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
   max-width: 600px !important;
   margin-top: 2rem !important;
 }
