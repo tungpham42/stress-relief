@@ -34,7 +34,7 @@ export default function MeditationTimer() {
     <div className="text-center my-4">
       <h5>
         <FontAwesomeIcon icon={faHourglassHalf} className="me-2" />
-        Thời gian thiền: {formatTime(seconds)}
+        Thời gian thiền <code>{formatTime(seconds)}</code>
       </h5>
       <Button
         onClick={() => setActive(!active)}
