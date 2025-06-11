@@ -19,11 +19,22 @@ export default function MeditationTimer() {
     return () => clearInterval(timer);
   }, [active]);
 
+  // Convert seconds to HH:MM:SS format
+  const formatTime = (totalSeconds) => {
+    const hours = Math.floor(totalSeconds / 3600);
+    const minutes = Math.floor((totalSeconds % 3600) / 60);
+    const secs = totalSeconds % 60;
+
+    return `${hours.toString().padStart(2, "0")}:${minutes
+      .toString()
+      .padStart(2, "0")}:${secs.toString().padStart(2, "0")}`;
+  };
+
   return (
     <div className="text-center my-4">
       <h5>
         <FontAwesomeIcon icon={faHourglassHalf} className="me-2" />
-        Thời gian thiền: {seconds}s
+        Thời gian thiền: {formatTime(seconds)}
       </h5>
       <Button
         onClick={() => setActive(!active)}
