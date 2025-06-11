@@ -42,45 +42,6 @@ h5 {
   font-weight: 600 !important;
 }
 
-.btn-primary {
-  background-color: #0288d1 !important;
-  border: none !important;
-  border-radius: 25px !important;
-  padding: 0.75rem 1.5rem !important;
-  transition: transform 0.2s ease, background-color 0.3s ease !important;
-}
-
-.btn-primary:hover {
-  background-color: #01579b !important;
-  transform: scale(1.05) !important;
-}
-
-.btn-success {
-  background-color: #4caf50 !important;
-  border: none !important;
-  border-radius: 25px !important;
-  padding: 0.75rem 1.5rem !important;
-  transition: transform 0.2s ease, background-color 0.3s ease !important;
-}
-
-.btn-success:hover {
-  background-color: #388e3c !important;
-  transform: scale(1.05) !important;
-}
-
-.btn-danger {
-  background-color: #ef5350 !important;
-  border: none !important;
-  border-radius: 25px !important;
-  padding: 0.75rem 1.5rem !important;
-  transition: transform 0.2s ease, background-color 0.3s ease !important;
-}
-
-.btn-danger:hover {
-  background-color: #d32f2f !important;
-  transform: scale(1.05) !important;
-}
-
 .text-center {
   animation: fadeIn 1s ease-in-out !important;
 }
@@ -110,4 +71,20 @@ iframe {
     opacity: 1 !important;
     transform: translateY(0) !important;
   }
+}
+
+.liquid-glass-button {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  color: #424242 !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1) !important;
+  padding: 0.5rem 1rem !important;
+  transition: backgroundColor 0.3s ease !important;
+}
+
+.liquid-glass-button:hover {
+  background-color: rgba(255, 255, 255, 0.3) !important;
 }

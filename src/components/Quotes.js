@@ -17,7 +17,7 @@ export default function Quotes() {
       <blockquote className="p-4">
         <FontAwesomeIcon icon={faQuoteLeft} className="me-2" />"{quote}"
       </blockquote>
-      <Button variant="success" onClick={handleNewQuote}>
+      <Button onClick={handleNewQuote} className="liquid-glass-button">
         <FontAwesomeIcon icon={faSyncAlt} className="me-2" />
         Câu nói khác
       </Button>

@@ -26,15 +26,14 @@ export default function MeditationTimer() {
         Thời gian thiền: {seconds}s
       </h5>
       <Button
-        variant="primary"
         onClick={() => setActive(!active)}
-        className="me-2"
+        className="me-2 liquid-glass-button"
       >
         <FontAwesomeIcon icon={faPlayCircle} className="me-2" />
         {active ? "Tạm dừng" : "Bắt đầu"}
       </Button>
       <Button
-        variant="danger"
+        className="liquid-glass-button"
         onClick={() => {
           setSeconds(0);
           setActive(false);
