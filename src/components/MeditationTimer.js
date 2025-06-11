@@ -33,7 +33,10 @@ export default function MeditationTimer() {
   return (
     <div className="text-center my-4">
       <h5>
-        <FontAwesomeIcon icon={faHourglassHalf} className="me-2" />
+        <FontAwesomeIcon
+          icon={faHourglassHalf}
+          className={`me-2${active ? " rotating" : ""}`}
+        />
         Thời gian thiền <code>{formatTime(seconds)}</code>
       </h5>
       <Button
