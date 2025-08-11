@@ -15,7 +15,7 @@ function App() {
         dismissible={false}
         altText="Logo Soft"
       />
-      <Container className="my-4">
+      <Container className="my-5">
         <h1 className="text-center">
           <FontAwesomeIcon icon={faLeaf} className="me-2" />
           Ứng dụng giảm căng thẳng
